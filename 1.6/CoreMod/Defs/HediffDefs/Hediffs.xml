@@ -1,0 +1,154 @@
+<Defs>
+	<HediffDef>
+		<defName>PhaseModeSTNL</defName>
+		<label>Phase Mode</label>
+		<defaultLabelColor>(0.5, 0.5, 0.5)</defaultLabelColor>
+		<description>A state of constant skip hopping inside a corrupted skip grid, causing this person to constantly phase in and out of their position, this process is fast enough to grant the user with the ability to phase through walls. \n\nThis state of constant hopping disturbs the flow of the psylink commands, giving new effects to certain abilities while in Phase mode.</description>
+		<hediffClass>VPE_PhaseShift.Hediff_DisappearWhenOutOfFocus</hediffClass>
+		<isBad>false</isBad>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<statFactors>
+					<Flammability>0</Flammability>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+					<IncomingDamageFactor>0</IncomingDamageFactor>
+					<VEF_MeleeAttackDamageFactor>-1</VEF_MeleeAttackDamageFactor>
+					<VEF_RangeAttackDamageFactor>-1</VEF_RangeAttackDamageFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+					<li Class="HediffCompProperties">
+				<compClass>VEF.Hediffs.HediffComp_Phasing</compClass>
+			</li>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>VPE_PhaseFieldSTNL</stateEffecter>
+			</li>
+			<li Class="HediffCompProperties_Invisibility">
+
+      </li>
+			<li Class="VanillaPsycastsExpanded.HediffCompProperties_DisappearsOnDowned"/>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+	<HediffDef>
+		<defName>PhaseMarkSTNL</defName>
+		<label>Phase Mark</label>
+		<defaultLabelColor>(0.7, 0, 0)</defaultLabelColor>
+		<description>This pawn has been marked by an ancient tracking method, these marks allow certain psycasts to obtain a target information necessary to function.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>true</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+			
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>VPE_PhaseMarkSTNL</stateEffecter>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+	<HediffDef>
+		<defName>PhaseEyeSTNL</defName>
+		<label>Phase Blade</label>
+		<description>A psychic phenomenon obtained from absorbing the energy of a target, can be used to empower certain psycasts or to restore a small amount of psyfocus.</description>
+		<hediffClass>VPE_PhaseShift.Hediff_StackCounter</hediffClass>
+		<isBad>false</isBad>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+			
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>PhaseDecaySTNL</defName>
+		<label>Phase Decay</label>
+		<defaultLabelColor>(0.5, 0, 0)</defaultLabelColor>
+		<description>The side effect of a creature duplicated by being pulled from the skip grid error, the archotechnological processor in charge of controlling the skip grid will soon notice this error and correct it, causing this creature to disappear.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>true</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+			
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<compClass>VPE_PhaseShift.HediffComp_DisappearsandDespawns</compClass>
+				<disappearsAfterTicks>12500</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_PhaseNexusSTNL</defName>
+		<label>Phase Nexus</label>
+		<description>A strong stream of psychic energy emanates from this nexus of phase tears, allowing this creature to consume less psyfocus to use psycasts.\n\nThis group of phase tears allow the user to use some of the excess energy they naturally produce from being a phenomenon caused by errors in the archotech skip system, this nexus will disappear as the archotech in charge of the skip grid notices the energy leak.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<statFactors>
+					<VPE_PsyfocusCostFactor>0.70</VPE_PsyfocusCostFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>12500</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_PhaseshiftSTNL/Pawn/Convergence/Convergence</li>
+				</texPaths>
+				<overrideMeshSize>(2, 2)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0, 0)</offset>
+						<layer>1000</layer>
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, 0, 0)</offset>
+						<layer>0</layer>
+					</dataSouth>
+					<dataEast>
+						<offset>(0, 0,0.05)</offset>
+						<layer>90</layer>
+					</dataEast>
+					<dataWest>
+						<offset>(0, 0,0.05)</offset>
+						<layer>90</layer>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+</Defs>

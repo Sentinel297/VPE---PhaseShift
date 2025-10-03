@@ -1,0 +1,288 @@
+<Defs>
+<FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_PhaseSlashBWSTNL</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/BlackWhiteSlash</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Darkness</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.1</fadeOutTime>
+    <growthRate>1</growthRate>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_PhaseSlashRWSTNL</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/RedWhiteSlash</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Darkness</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.1</fadeOutTime>
+    <growthRate>1</growthRate>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_PhaseSlashBWSTNLong</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/BlackWhiteSlash</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Darkness</altitudeLayer>
+    <fadeInTime>3</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>3</fadeOutTime>
+    <growthRate>0.5</growthRate>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_PhaseSlashRWSTNLong</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/RedWhiteSlash</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Darkness</altitudeLayer>
+    <fadeInTime>3</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>3</fadeOutTime>
+    <growthRate>0.5</growthRate>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_PhaseMarkSTNL</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/RedWhiteSlash</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Darkness</altitudeLayer>
+    <fadeInTime>3</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>3</fadeOutTime>
+    <growthRate>0</growthRate>
+  </FleckDef>
+  
+    <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_SeekMarkBWSTNL</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/SeekMarkBW</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Darkness</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>0.5</growthRate>
+  </FleckDef>
+  
+    <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_SeekMarkRWSTNL</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/SeekMarkRW</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Darkness</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>0.5</growthRate>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_PhaseTyphoonBWSTNL</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/PhaseTyphoon</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Darkness</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>0.5</growthRate>
+  </FleckDef>
+
+  
+
+<FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_PhaseWormholeBWSTNL</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/PhaseWormhole</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Darkness</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>1</growthRate>
+  </FleckDef>
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_PhaseWormholeRWSTNL</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/PhaseWormholeRW</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Darkness</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>1</growthRate>
+  </FleckDef>
+  
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_RiftShiftSTNL</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/WhiteSlash</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Silhouettes</altitudeLayer>
+    <fadeInTime>0.05</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.05</fadeOutTime>
+    <growthRate>1</growthRate>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_RiftShiftNexusSTNL</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/WhiteSlash</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Silhouettes</altitudeLayer>
+    <fadeInTime>0</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>1</growthRate>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_AftereffectSkipSTNL</defName>
+    <graphicData>
+      <texPath>UI_PhaseshiftSTNL/Flecks/Aftereffect</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <fadeInTime>0</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.2</fadeOutTime>
+    <growthRate>1</growthRate>
+  </FleckDef>
+  
+  <EffecterDef>
+    <defName>VPE_PhaseMarkSTNL</defName>
+    <children>  
+	   <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>VPE_PhaseMarkSTNL</fleckDef>
+		<positionRadius>0.5</positionRadius>
+        <ticksBetweenMotes>60</ticksBetweenMotes>
+		<positionOffset>(0, 0, -0.5)</positionOffset>
+        <scale>0.3</scale>
+        <spawnLocType>OnSource</spawnLocType>
+        <absoluteAngle>true</absoluteAngle>
+        <angle>30~280</angle>
+        <speed>0.2~0.35</speed>
+      </li>
+    </children>
+  </EffecterDef>
+  
+  
+    <EffecterDef>
+    <defName>VPE_PhaseFieldSTNL</defName>
+    <children>
+		  <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>VPE_AftereffectSkipSTNL</fleckDef>
+		<positionRadius>0</positionRadius>
+        <ticksBetweenMotes>2</ticksBetweenMotes>
+		<positionOffset>(0, 0, 0)</positionOffset>
+        <scale>0.5</scale>
+        <spawnLocType>OnTarget</spawnLocType>
+        <absoluteAngle>true</absoluteAngle>
+        <angle>0~0</angle>
+		<rotation>0</rotation>
+        <speed>0</speed>
+      </li>
+	
+	  <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>VPE_PhaseWormholeBWSTNL</fleckDef>
+		<positionRadius>3</positionRadius>
+        <ticksBetweenMotes>40</ticksBetweenMotes>
+		<positionOffset>(0, 0, -0.5)</positionOffset>
+        <scale>0.35~1</scale>
+        <spawnLocType>OnSource</spawnLocType>
+        <absoluteAngle>true</absoluteAngle>
+        <angle>30~280</angle>
+        <speed>0.2~0.35</speed>
+      </li>
+	  
+	   <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>VPE_PhaseWormholeRWSTNL</fleckDef>
+		<positionRadius>3</positionRadius>
+        <ticksBetweenMotes>40</ticksBetweenMotes>
+		<positionOffset>(0, 0, -0.5)</positionOffset>
+        <scale>0.35~1</scale>
+        <spawnLocType>OnSource</spawnLocType>
+        <absoluteAngle>true</absoluteAngle>
+        <angle>30~280</angle>
+        <speed>0.2~0.35</speed>
+      </li>
+	  <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>VPE_PhaseWormholeBWSTNL</fleckDef>
+		<positionRadius>3</positionRadius>
+        <ticksBetweenMotes>40</ticksBetweenMotes>
+		<positionOffset>(0, 0, -0.5)</positionOffset>
+        <scale>0.35~1</scale>
+        <spawnLocType>OnSource</spawnLocType>
+        <absoluteAngle>true</absoluteAngle>
+        <angle>30~280</angle>
+        <speed>0.2~0.35</speed>
+      </li>
+	  
+	   <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>VPE_PhaseWormholeRWSTNL</fleckDef>
+		<positionRadius>3</positionRadius>
+        <ticksBetweenMotes>40</ticksBetweenMotes>
+		<positionOffset>(0, 0, -0.5)</positionOffset>
+        <scale>0.35~1</scale>
+        <spawnLocType>OnSource</spawnLocType>
+        <absoluteAngle>true</absoluteAngle>
+        <angle>30~280</angle>
+        <speed>0.2~0.35</speed>
+      </li>
+    </children>
+  </EffecterDef>
+
+</Defs>

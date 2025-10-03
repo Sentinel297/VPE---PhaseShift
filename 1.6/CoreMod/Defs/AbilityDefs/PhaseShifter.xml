@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_PhaseModeSTNL</defName>
+		<label>Phase Mode</label>
+		<description>Enter a state of constant skip hopping into a corrupted skip grid, allowing you to become what most would call a ghost, you can barely affect others or be affected by physical damage in this state, walls aren't an issue either. \n\nThis skill enables the use of the "Phase Mode" section of abilities. \n\nThis ability drains psyfocus over time and will dispel if out of focus. (Drain speed/strength can be configured in mod settings.)</description>
+		<iconPath>UI_PhaseshiftSTNL/Abilities/Phase</iconPath>
+		<castTime>0</castTime>
+		<chance>0</chance>
+		<durationTime>0</durationTime>
+		<targetMode>Self</targetMode>
+		<castSound>Psycast_Skip_Entry</castSound>
+		<range>14.9</range>
+		<hasAoE>false</hasAoE>
+		<needsTicking>true</needsTicking>
+		<abilityClass>VPE_PhaseShift.Ability_PhaseToggle</abilityClass>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetItems>false</canTargetItems>
+			<canTargetMechs>true</canTargetMechs>
+			<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_PhaseShiftSTNL</path>
+				<level>1</level>
+				<order>1</order>
+				<psyfocusCost>0</psyfocusCost>
+				<entropyGain>0</entropyGain>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 2 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_PhaseSlashSTNL</defName>
+		<label>Phase Slash</label>
+		<description>Normal Mode: Create a psychic slash and obtain a Phase Blade stack. \n\nPhase Mode: Slash the target from the skip grid, causing multiple slashes according to how many Phase Blades you have. Consumes every Phase Blade you currently have.</description>
+		<iconPath>UI_PhaseshiftSTNL/Abilities/Slash</iconPath>
+		<castTime>30</castTime>
+		<chance>1</chance>
+		<durationTime>0</durationTime>
+		<targetMode>Pawn</targetMode>
+		<range>14.9</range>
+		<hasAoE>false</hasAoE>
+		<castSound>VPE_ControlledFrenzy_Cast</castSound>
+		<needsTicking>true</needsTicking>
+		<abilityClass>VPE_PhaseShift.Ability_PhaseSlash</abilityClass>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetItems>false</canTargetItems>
+			<canTargetMechs>true</canTargetMechs>
+			<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_PhaseShiftSTNL</path>
+				<level>2</level>
+				<order>2</order>
+				<psyfocusCost>0.04</psyfocusCost>
+				<entropyGain>5</entropyGain>
+				<prerequisites>
+					<li>VPE_PhaseModeSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_PhaseMarkSTNL</defName>
+		<label>Phase Mark</label>
+		<description>Normal Mode: Replicate an ancient tracking method, causing a phase mark to appear on your target. \n\nPhase Mode: Consume the energy of the phase mark to restore 50% of your Psyfocus (can be tweaked in settings).</description>
+		<iconPath>UI_PhaseshiftSTNL/Abilities/Mark</iconPath>
+		<castTime>120</castTime>
+		<chance>0</chance>
+		<durationTime>0</durationTime>
+		<targetMode>Pawn</targetMode>
+		<range>14.9</range>
+		<hasAoE>false</hasAoE>
+		<castSound>PsycastPsychicPulse</castSound>
+		<needsTicking>true</needsTicking>
+		<abilityClass>VPE_PhaseShift.Ability_PhaseMark</abilityClass>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetItems>false</canTargetItems>
+			<canTargetMechs>true</canTargetMechs>
+			<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_PhaseShiftSTNL</path>
+				<level>2</level>
+				<order>1</order>
+				<psyfocusCost>0</psyfocusCost>
+				<entropyGain>15</entropyGain>
+				<prerequisites>
+					<li>VPE_PhaseModeSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 3 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_PhaseArsenalSTNL</defName>
+		<label>Phase Arsenal</label>
+		<description>Normal Mode: Manifest a copy of the target from data present in an archotech database to fight for you (Does not work on mechanoids, lasts 5 hours).\n\nPhase Mode: Weave a Phase Rift that will attack enemies in its range (lasts 30 seconds, damage can be configured in settings).</description>
+		<iconPath>UI_PhaseshiftSTNL/Abilities/Logistics</iconPath>
+		<castTime>30</castTime>
+		<chance>0</chance>
+		<durationTime>0</durationTime>
+		<targetMode>Pawn</targetMode>
+		<range>14.9</range>
+		<hasAoE>false</hasAoE>
+		<castSound>VPE_SkipGate_Cast</castSound>
+		<needsTicking>true</needsTicking>
+		<abilityClass>VPE_PhaseShift.Ability_PhaseLogistics</abilityClass>
+		<targetingParameters>
+			<canTargetLocations>True</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetItems>false</canTargetItems>
+			<canTargetMechs>false</canTargetMechs>
+			<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_PhaseShiftSTNL</path>
+				<level>3</level>
+				<order>3</order>
+				<psyfocusCost>0.20</psyfocusCost>
+				<entropyGain>20</entropyGain>
+				<prerequisites>
+					<li>VPE_PhaseSlashSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_PhaseHarvestSTNL</defName>
+		<label>Phase Reap</label>
+		<description>Normal Mode: Consumes a Phase Mark on any target in the AoE to inflict them with a Phase Slash. \n\nPhase Mode: Absorb the energy of the Phase Marks placed on targets to heal non permanent wounds, prioritizing vital parts (liver, lungs, heart, etc... (1 mark = 1 wound healed, doesn't restore missing parts nor permanent scars).</description>
+		<iconPath>UI_PhaseshiftSTNL/Abilities/Reap</iconPath>
+		<castTime>30</castTime>
+		<chance>0</chance>
+		<durationTime>250</durationTime>
+		<targetMode>Location</targetMode>
+		<range>23.9</range>
+		<hasAoE>false</hasAoE>
+		<castSound>Psycast_Skip_Entry</castSound>
+		<needsTicking>true</needsTicking>
+		<abilityClass>VPE_PhaseShift.Ability_PhaseHarvest</abilityClass>
+		<targetingParameters>
+			<canTargetLocations>True</canTargetLocations>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetItems>false</canTargetItems>
+			<canTargetMechs>true</canTargetMechs>
+			<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_PhaseShiftSTNL</path>
+				<level>3</level>
+				<order>1</order>
+				<psyfocusCost>0.24</psyfocusCost>
+				<entropyGain>20</entropyGain>
+				<prerequisites>
+					<li>VPE_PhaseMarkSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 4 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_PhaseTearSTNL</defName>
+		<label>Phase Tear</label>
+		<description>Normal Mode: Destabilize the phase tears, causing them to detonate. \n\nPhase Mode: Summon 3 phase tears, they will grant this pawn phase blade stacks upon teleporting onto an enemy.</description>
+		<iconPath>UI_PhaseshiftSTNL/Abilities/Tear</iconPath>
+		<castTime>30</castTime>
+		<chance>0</chance>
+		<durationTime>1200</durationTime>
+		<targetMode>Self</targetMode>
+		<range>-1</range>
+		<hasAoE>false</hasAoE>
+		<castSound>VPE_SkipGate_Cast</castSound>
+		<needsTicking>true</needsTicking>
+		<abilityClass>VPE_PhaseShift.Ability_PhaseTear</abilityClass>
+		<targetingParameters>
+			<canTargetLocations>True</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetItems>false</canTargetItems>
+			<canTargetMechs>true</canTargetMechs>
+			<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_PhaseShiftSTNL</path>
+				<level>4</level>
+				<order>3</order>
+				<psyfocusCost>0.30</psyfocusCost>
+				<entropyGain>30</entropyGain>
+				<prerequisites>
+					<li>VPE_PhaseArsenalSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<ThingDef>
+		<defName>PhaseTearSTNL</defName>
+		<label>Phase Tear</label>
+		<description>A tear in reality linking to what seems to be another dimension, a strong stream of energy is preventing you from entering, destabilizing it could prove useful. \n\nThis tear appears to be an attempt at skipping an area into itself, causing a feedback loop in the archotechnological calculation method of the skip psycast which gives the impression of linking to multiple dimensions. In reality, what you are seeing is an attempt at correcting the error. The rifts are drawn by psychic energy emanated by sentient creatures, the stronger their hostility are, the more energy is obtained. This sort of energy is referred as a phase blade.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>UI_PhaseshiftSTNL/Abilities/TearRifts</texPath>
+			<drawSize>(3, 3)</drawSize>
+			<drawOffset>(0, 0, 0)</drawOffset>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Darkness</altitudeLayer>
+		<pathCost>0</pathCost>
+		<blockWind>true</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<Mass>0</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<comps>
+			<li Class="VPE_PhaseShift.CompProperties_PhaseRift">
+				<interval>60</interval>
+				<!-- every second -->
+				<duration>1200</duration>
+				<!-- lasts 20 seconds -->
+				<range>4</range>
+				<!-- How far from the target -->
+				<maxRange>20</maxRange>
+				<!-- Target check range -->
+				<followsCaster>true</followsCaster>
+				<!-- Returns to caster if no valid target -->
+				<giveStackForNearbyPawn>PhaseEyeSTNL</giveStackForNearbyPawn>
+				<!-- Which hediff should get the stack -->
+				<radiusForStack>6</radiusForStack>
+			</li>
+		</comps>
+	</ThingDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_PhaseHuntSTNL</defName>
+		<label>Phase Hunt</label>
+		<description>Normal Mode: Weave 3 rifts that will stalk an enemy within 30 tiles and place a Phase Mark upon them. the rifts favorise targets without a Phase Mark. \n\nPhase Mode: Shift allies within 4 tiles (Black target indicator), causing them to be transported to the target location.</description>
+		<iconPath>UI_PhaseshiftSTNL/Abilities/Raid</iconPath>
+		<castTime>30</castTime>
+		<chance>0</chance>
+		<durationTime>1200</durationTime>
+		<targetMode>Pawn</targetMode>
+		<range>50.9</range>
+		<hasAoE>false</hasAoE>
+		<castSound>VPE_Deathshield_Cast</castSound>
+		<needsTicking>true</needsTicking>
+		<abilityClass>VPE_PhaseShift.Ability_PhaseRaid</abilityClass>
+		<targetingParameters>
+			<canTargetLocations>True</canTargetLocations>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetItems>false</canTargetItems>
+			<canTargetMechs>true</canTargetMechs>
+			<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_PhaseShiftSTNL</path>
+				<level>4</level>
+				<order>1</order>
+				<psyfocusCost>0.40</psyfocusCost>
+				<entropyGain>35</entropyGain>
+				<prerequisites>
+					<li>VPE_PhaseHarvestSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<ThingDef>
+		<defName>PhaseRiftSTNL</defName>
+		<label>Phase Rift</label>
+		<description>A rift in the physical realm, what appears to be an eye can be seen from the outside. Gazing upon anyone that appears to be hostile. \n\nOriginally an archotech's observation conduit for threat suppression, this rift has gone haywire and is constantly in a state of scanning and marking creatures it perceives as hostile. Its mark is used as a tracking device, once a pawn has been marked they will constantly feel watched until death.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>UI_PhaseshiftSTNL/Abilities/PhaseRifts</texPath>
+			<drawSize>(3, 3)</drawSize>
+			<drawOffset>(0, 0, 0)</drawOffset>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Darkness</altitudeLayer>
+		<pathCost>0</pathCost>
+		<blockWind>true</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<Mass>0</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<comps>
+			<li Class="VPE_PhaseShift.CompProperties_PhaseRift">
+				<interval>60</interval>
+				<!-- every second  -->
+				<duration>1200</duration>
+				<!-- lasts 20 seconds -->
+				<range>3</range>
+				<maxRange>30</maxRange>
+				<!-- Radius from portal -->
+				<hediffToAdd>PhaseMarkSTNL</hediffToAdd>
+				<followsCaster>true</followsCaster>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- Level 5 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_PhaseStasisSTNL</defName>
+		<label>Phase Stasis</label>
+		<description>Normal Mode: Pull the latest captured creature out of the corrupted skip grid, recasting will release the next latest creature. \n\nPhase Mode: Send a creature into a corrupted skip grid, effectively trapping them there forever in stasis.</description>
+		<iconPath>UI_PhaseshiftSTNL/Abilities/Jail</iconPath>
+		<castTime>30</castTime>
+		<chance>0</chance>
+		<durationTime>0</durationTime>
+		<targetMode>Pawn</targetMode>
+		<range>14.9</range>
+		<hasAoE>false</hasAoE>
+		<castSound>VPE_Skillroll_Cast</castSound>
+		<needsTicking>true</needsTicking>
+		<abilityClass>VPE_PhaseShift.Ability_PhaseRift</abilityClass>
+		<targetingParameters>
+			<canTargetLocations>True</canTargetLocations>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetItems>false</canTargetItems>
+			<canTargetMechs>true</canTargetMechs>
+			<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_PhaseShiftSTNL</path>
+				<level>5</level>
+				<order>1</order>
+				<psyfocusCost>0.15</psyfocusCost>
+				<entropyGain>0</entropyGain>
+				<prerequisites>
+					<li>VPE_PhaseTearSTNL</li>
+					<li>VPE_PhaseHuntSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 6 (3 on UI, middle of rift shape) -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_PhaseStormSTNL</defName>
+		<label>Phase Storm</label>
+		<description>Normal Mode: Consumes every phase mark to provoke phase anomalies on marked pawns that will attack any nearby enemy, restores 5% Psyfocus per mark, lasts 30 seconds (Damage can be tweaked in settings).  \n\nPhase Mode: Consumes every phase blades to conjure a rift that will inflict damage to nearby enemies, duration scales with phase blades up to a max of 20 seconds.</description>
+		<iconPath>UI_PhaseshiftSTNL/Abilities/Storm</iconPath>
+		<castTime>30</castTime>
+		<chance>0</chance>
+		<durationTime>0</durationTime>
+		<targetMode>Location</targetMode>
+		<range>35.9</range>
+		<hasAoE>false</hasAoE>
+		<castSound>VPE_AggressiveHeatDump_Cast</castSound>
+		<needsTicking>true</needsTicking>
+		<abilityClass>VPE_PhaseShift.Ability_PhaseStorm</abilityClass>
+		<targetingParameters>
+			<canTargetLocations>True</canTargetLocations>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetItems>false</canTargetItems>
+			<canTargetMechs>true</canTargetMechs>
+			<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_PhaseShiftSTNL</path>
+				<level>3</level>
+				<order>2</order>
+				<psyfocusCost>0.59</psyfocusCost>
+				<entropyGain>200</entropyGain>
+				<prerequisites>
+					<li>VPE_PhaseStasisSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<ThingDef>
+		<defName>PhaseStormSTNL</defName>
+		<label>Phase Storm</label>
+		<description>Three rifts constantly shifting and tracking energy sources, their teleportation method provokes small scale explosions strong enough to burst organs from within. Curiously enough, these explosions do not affect buildings. \n\nThis group of phase tears form a phase storm, unlike their singular form this group possesses the ability to violently absorb energy from psychic creatures with high levels of hostility.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>UI_PhaseshiftSTNL/Abilities/PhaseTyphoon</texPath>
+			<drawSize>(3, 3)</drawSize>
+			<drawOffset>(0, 0, 0)</drawOffset>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Darkness</altitudeLayer>
+		<pathCost>0</pathCost>
+		<blockWind>true</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<Mass>0</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<comps>
+			<li Class="VPE_PhaseShift.CompProperties_PhaseTyphoon">
+				<interval>60</interval>
+				<!-- every second  -->
+				<duration>99999999</duration>
+				<!-- Virtually Infinite for this one, handled by the other comp -->
+				<range>3</range>
+				<!-- Max orbit range from enemy -->
+				<maxRange>30</maxRange>
+				<!-- Radius to find enemy-->
+				<followsCaster>true</followsCaster>
+			</li>
+			<li Class="VPE_PhaseShift.CompProperties_DurationByStacks">
+				<stackHediff>PhaseEyeSTNL</stackHediff>
+				<!-- Stack Hediff name -->
+				<baseDuration>0</baseDuration>
+				<!-- Base ticks duration -->
+				<durationPerStack>120</durationPerStack>
+				<!-- Additional ticks per stack -->
+				<maxDuration>1200</maxDuration>
+				<!-- Max total ticks -->
+				<!-- Pulse settings -->
+				<pulseDamageDef>Bomb</pulseDamageDef>
+				<!-- DamageDef to apply -->
+				<pulseDamageAmount>20</pulseDamageAmount>
+				<!-- Damage amount per pulse -->
+				<pulseRadius>7</pulseRadius>
+				<!-- Radius of pulse in cells -->
+				<pulseIntervalTicks>60</pulseIntervalTicks>
+				<!-- How often pulse occurs (ticks) -->
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
+	
