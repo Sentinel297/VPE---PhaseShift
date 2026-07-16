@@ -1,0 +1,33 @@
+<LanguageData>
+<!-- Phase mode -->
+<VPE_PhaseShift_PhaseMode_PsyfocusEmpty_STNL>Ran out of Psyfocus...</VPE_PhaseShift_PhaseMode_PsyfocusEmpty_STNL>
+<VPE_PhaseShift_PhaseMode_NormalMode_STNL>Normal mode</VPE_PhaseShift_PhaseMode_NormalMode_STNL>
+<VPE_PhaseShift_PhaseMode_PhaseMode_STNL>Phase mode</VPE_PhaseShift_PhaseMode_PhaseMode_STNL>
+<VPE_PhaseShift_PhaseMode_BladesCount_STNL>Blade(s): {0}</VPE_PhaseShift_PhaseMode_BladesCount_STNL>
+<VPE_PhaseShift_PhaseMode_PlusOneBlade_STNL>+1 phase blade</VPE_PhaseShift_PhaseMode_PlusOneBlade_STNL>
+<VPE_PhaseShift_PhaseMode_FivePCTFocus_STNL>+5% Psyfocus</VPE_PhaseShift_PhaseMode_FivePCTFocus_STNL>
+<VPE_PhaseShift_PhaseMode_MaxBlades_STNL>Max phase blades</VPE_PhaseShift_PhaseMode_MaxBlades_STNL>
+<VPE_PhaseShift_PhaseMode_ConsumeOneBlade_STNL>Consume phase blade</VPE_PhaseShift_PhaseMode_ConsumeOneBlade_STNL>
+<VPE_PhaseShift_PhaseMode_ConsumeOneBlade_Desc_STNL>Consume one phase blade to restore 5% psyfocus.</VPE_PhaseShift_PhaseMode_ConsumeOneBlade_Desc_STNL>
+<VPE_PhaseShift_PhaseMode_ConsumeAllBlades_STNL>Consume all phase blades</VPE_PhaseShift_PhaseMode_ConsumeAllBlades_STNL>
+<VPE_PhaseShift_PhaseMode_ConsumeAllBlades_Desc_STNL>Consume every phase blade to restore 5% psyfocus per absorbed blade.</VPE_PhaseShift_PhaseMode_ConsumeAllBlades_Desc_STNL>
+<VPE_PhaseShift_PhaseMode_PhaseNexus_STNL>Phase: Nexus</VPE_PhaseShift_PhaseMode_PhaseNexus_STNL>
+<VPE_PhaseShift_PhaseMode_PhaseNexus_Desc_STNL>Consume 10 phase blades to form a phase nexus, its energy allowing you to tap more power from the psylink at a reduced cost.</VPE_PhaseShift_PhaseMode_PhaseNexus_Desc_STNL>
+<!-- Phase mark -->
+<VPE_PhaseShift_PhaseMark_Consumed_STNL>Phase mark consumed</VPE_PhaseShift_PhaseMark_Consumed_STNL>
+<VPE_PhaseShift_PhaseMark_Marked_STNL>Phase marked</VPE_PhaseShift_PhaseMark_Marked_STNL>
+<VPE_PhaseShift_PhaseMark_Restoration_STNL>+{0}% Psyfocus</VPE_PhaseShift_PhaseMark_Restoration_STNL>
+<!-- Phase storm -->
+<VPE_PhaseShift_PhaseStorm_AllMarksConsumed_STNL>All phase blades consumed</VPE_PhaseShift_PhaseStorm_AllMarksConsumed_STNL>
+<VPE_PhaseShift_PhaseStorm_NoMarkFound_STNL>No phase marks found</VPE_PhaseShift_PhaseStorm_NoMarkFound_STNL>
+<!-- Settings -->
+<VPE_PhaseShift_Settings_PhaseModeDrain_STNL>Phase Mode Drain Amount: {0}%</VPE_PhaseShift_Settings_PhaseModeDrain_STNL>
+<VPE_PhaseShift_Settings_PhaseModeDrainInterval_STNL>Phase Mode Drain Interval (60 Ticks = 1 Sec, 2500 Ticks = 1 Hour): {0} ticks</VPE_PhaseShift_Settings_PhaseModeDrainInterval_STNL>
+<VPE_PhaseShift_Settings_PhaseMarkPsyfocusRestore_STNL>Phase Mark Psyfocus Restore: {0}%</VPE_PhaseShift_Settings_PhaseMarkPsyfocusRestore_STNL>
+<VPE_PhaseShift_Settings_PhaseSlashDamage_STNL>Phase Slash Damage (Both modes): {0}</VPE_PhaseShift_Settings_PhaseSlashDamage_STNL>
+<VPE_PhaseShift_Settings_PhaseArsenalRiftDamage_STNL>Phase Arsenal Rift Damage: {0}</VPE_PhaseShift_Settings_PhaseArsenalRiftDamage_STNL>
+<VPE_PhaseShift_Settings_PhaseTearExploDmg_STNL>Phase Tear Explosion Damage: {0}</VPE_PhaseShift_Settings_PhaseTearExploDmg_STNL>
+<VPE_PhaseShift_Settings_PhaseTearExploRadius_STNL>Phase Tear Explosion Radius: {0} cell(s)</VPE_PhaseShift_Settings_PhaseTearExploRadius_STNL>
+<VPE_PhaseShift_Settings_PhaseReapDamage_STNL>Phase Reap Damage: {0}</VPE_PhaseShift_Settings_PhaseReapDamage_STNL>
+<VPE_PhaseShift_Settings_PhaseStormSlashDamage_STNL>Phase Storm Slash Damage: {0}</VPE_PhaseShift_Settings_PhaseStormSlashDamage_STNL>
+</LanguageData>
