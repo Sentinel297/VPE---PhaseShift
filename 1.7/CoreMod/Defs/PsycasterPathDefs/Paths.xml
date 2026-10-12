@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <VanillaPsycastsExpanded.PsycasterPathDef>
+    <defName>VPE_PhaseShiftSTNL</defName>
+    <label>Phase Shift</label>
+    <description>Shift in and out of a glitched skip grid subsystem to harness this path’s full potential.</description>
+    <background>UI_PhaseshiftSTNL/Tree/Phaseshifttreebase</background>
+    <altBackground>UI_PhaseshiftSTNL/Tree/Phaseshifttreebase</altBackground>
+    <tab>Misc</tab>
+    <tooltip>Shift in and out of a glitched skip subsystem to harness this path’s full potential.</tooltip>
+  </VanillaPsycastsExpanded.PsycasterPathDef>
+
+</Defs>
